@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="h-full min-w-[375px]" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <script defer src="./index.js"></script>
+    <title>News_Homepage</title>
+  </head>
+  <body class="min-h-screen bg-white">
+    <header
+      class="mt-7 min-[64rem]:mt-[5.5625rem] mb-8 mx-4 md:mx-[5rem] min-[64rem]:mx-[10.3125rem]"
+    >
+      <!-- desktop nav -->
+      <nav class="hidden min-[1024px]:flex justify-between items-center">
+        <img
+          src="./src/assets/images/logo.svg"
+          alt="logo"
+          class="w-[64.09px] h-[39.9px]"
+        />
+        <ul class="flex-centre gap-x-[2.5rem]">
+          <li>
+            <a class="menu" href="#"> Home </a>
+          </li>
+          <li>
+            <a class="menu" href="#"> New </a>
+          </li>
+          <li>
+            <a class="menu" href="#"> Popular </a>
+          </li>
+          <li>
+            <a class="menu" href="#"> Trending </a>
+          </li>
+          <li>
+            <a class="menu" href="#"> Categories </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- mobile nav -->
+      <div class="flex justify-between items centre min-[64rem]:hidden">
+        <img
+          src="./src/assets/images/logo.svg"
+          alt="logo"
+          class="w-[44.98px] h-[28px]"
+        />
+
+        <img
+          id="openBtn"
+          src="./src/assets/images/icon-menu.svg"
+          alt="open button"
+          class="h-[17px] w-[40px] cursor-pointer min-[64rem]:hidden"
+        />
+      </div>
+
+      <nav
+        id="sidebar"
+        class="bg-white fixed min-[64rem]:hidden top-0 right-0 w-[256px] h-full py-[9.0625rem] transform translate-x-full transition-transform duration-300"
+      >
+        <img
+          id="closeBtn"
+          class="absolute top-[27px] right-[24px] cursor-pointer"
+          src="./src/assets/images/icon-menu-close.svg"
+          alt="close svg"
+        />
+
+        <ul class="mx-6 space-y-6 text-sidebar text-Navy-950">
+          <li><a class="menu" href="#">Home</a></li>
+          <li><a class="menu" href="#">New</a></li>
+          <li><a class="menu" href="#">Popular</a></li>
+          <li><a class="menu" href="#">Trending</a></li>
+          <li><a class="menu" href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="xl:grid grid-cols-3 xl:gap-y-[34.5px] xl:gap-x-8 space-y-16 mx-4 md:mx-[5rem] pb-16 min-[64rem]:mx-[10.3125rem]"
+    >
+      <!-- Hero -->
+      <!-- Hero -->
+      <section class="grid grid-cols-1 gap-y-7 xl:gap-y-6 xl:grid-cols-grid xl:col-span-2">
+        <div>
+          <picture class="block">
+            <!-- Desktop image -->
+            <source
+              srcset="./src/assets/images/image-web-3-desktop.jpg"
+              media="(min-width: 1024px)"
+            />
+            <!-- Mobile image (default) -->
+            <img
+              src="./src/assets/images/image-web-3-mobile.jpg"
+              alt="image web 3"
+              class="w-full h-auto"
+            />
+          </picture>
+        </div>
+
+        <div class="grid grid-cols-1 xl:grid-cols-2 xl:space-x-8 space-y-6">
+          <h1 class="text-1 text-Navy-950 text-balance">
+            The Bright Future of Web 3.0?
+          </h1>
+
+          <div class="space-y-6 xl:space-y-8 ml-3">
+            <p class="text-6 text-Navy-600">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a
+              href="#"
+              class="bg-red-500 px-8 py-2 h-12 inline-flex items-center justify-center text-7 text-navy-950"
+              aria-label="Read more about the bright future of web 3.0"
+            >
+              READ MORE
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- New -->
+      <section class="bg-Navy-950 px-6 py-4 space-y-8">
+        <!-- New-1 -->
+        <h2 class="text-3 text-Gold-400">New</h2>
+        <div class="space-y-2">
+          <h3 class="text-white text-4">Hydrogen VS Electric Cars</h3>
+          <p class="text-6 text-Grey-300">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </div>
+
+        <hr class="border-1 w-full h-[1px] border-Navy-600" />
+        <!-- New-2 -->
+        <div class="space-y-2">
+          <h3 class="text-white text-4">The Downsides of AI Artistry</h3>
+          <p class="text-6 text-Grey-300">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+
+        <hr class="border-1 w-full h-[1px] border-Navy-600" />
+        <!-- New-3 -->
+        <div class="space-y-2">
+          <h3 class="text-white text-4">Is VC Funding Drying Up?</h3>
+          <p class="text-6 text-Grey-300">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </section>
+      <!-- poupular -->
+      <section
+        class="grid grid-cols-1 space-y-8 xl:grid-cols-subgrid xl:col-span-3"
+      >
+        <!-- card-1 -->
+        <div class="grid grid-cols-[100px_1fr] gap-x-6">
+          <div>
+            <img
+              class=" "
+              src="./src/assets/images/image-retro-pcs.jpg"
+              alt="old computers"
+            />
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-3 text-Red-500">01</h3>
+            <h4 class="text-5 text-Navy-950">Reviving Retro PCs</h4>
+            <p class="text-6 text-Navy-600">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="grid grid-cols-[100px_1fr] gap-x-6">
+          <div>
+            <img
+              class=" "
+              src="./src/assets/images/image-top-laptops.jpg"
+              alt="old computers"
+            />
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-3 text-Red-500">02</h3>
+            <h4 class="text-5 text-Navy-950">Top 10 Laptops of 2022</h4>
+            <p class="text-6 text-Navy-600">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="grid grid-cols-[100px_1fr] gap-x-6">
+          <div>
+            <img
+              class=" "
+              src="./src/assets/images/image-gaming-growth.jpg"
+              alt="keyboard image"
+            />
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-3 text-Red-500">03</h3>
+            <h4 class="text-5 text-Navy-950">The Growth of Gaming</h4>
+            <p class="text-6 text-Navy-600">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
