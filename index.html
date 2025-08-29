@@ -17,7 +17,7 @@
   </head>
   <body class="min-h-screen bg-white">
     <header
-      class="mt-7 min-[64rem]:mt-[5.5625rem] mb-8 mx-4 md:mx-[5rem] min-[64rem]:mx-[10.3125rem]"
+      class="mt-7 min-[64rem]:mt-[5.5625rem] mb-8 mx-4 md:mx-[5rem] xl:mx-[10.3125rem] xl:space-y-16"
     >
       <!-- desktop nav -->
       <nav class="hidden min-[1024px]:flex justify-between items-center">
@@ -63,7 +63,7 @@
 
       <nav
         id="sidebar"
-        class="bg-white fixed min-[64rem]:hidden top-0 right-0 w-[256px] h-full py-[9.0625rem] transform translate-x-full transition-transform duration-300"
+        class="bg-white fixed min-[64rem]:hidden top-0 right-0 w-[256px] md:w-[312px] h-full py-[9.0625rem] transform translate-x-full transition-transform duration-300"
       >
         <img
           id="closeBtn"
@@ -72,21 +72,23 @@
           alt="close svg"
         />
 
-        <ul class="mx-6 space-y-6 text-sidebar text-Navy-950">
-          <li><a class="menu" href="#">Home</a></li>
-          <li><a class="menu" href="#">New</a></li>
-          <li><a class="menu" href="#">Popular</a></li>
-          <li><a class="menu" href="#">Trending</a></li>
-          <li><a class="menu" href="#">Categories</a></li>
+        <ul class="mx-6 space-y-6 ">
+          <li><a class="menu text-sidebar text-Navy-950" href="#">Home</a></li>
+          <li><a class="menu text-sidebar text-Navy-950" href="#">New</a></li>
+          <li><a class="menu text-sidebar text-Navy-950" href="#">Popular</a></li>
+          <li><a class="menu text-sidebar text-Navy-950" href="#">Trending</a></li>
+          <li><a class="menu text-sidebar text-Navy-950" href="#">Categories</a></li>
         </ul>
       </nav>
     </header>
     <main
-      class="xl:grid grid-cols-3 xl:gap-y-[34.5px] xl:gap-x-8 space-y-16 mx-4 md:mx-[5rem] pb-16 min-[64rem]:mx-[10.3125rem]"
+      class="xl:grid grid-cols-3 xl:gap-y-[34.5px] xl:gap-x-8 space-y-16 mx-4 md:mx-[5rem] pb-16 xl:pb-32 xl:mx-[10.3125rem]"
     >
       <!-- Hero -->
       <!-- Hero -->
-      <section class="grid grid-cols-1 gap-y-7 xl:gap-y-6 xl:grid-cols-grid xl:col-span-2">
+      <section
+        class="grid grid-cols-1 gap-y-7 xl:gap-y-6 xl:grid-cols-grid xl:col-span-2"
+      >
         <div>
           <picture class="block">
             <!-- Desktop image -->
@@ -104,9 +106,7 @@
         </div>
 
         <div class="grid grid-cols-1 xl:grid-cols-2 xl:space-x-8 space-y-6">
-          <h1 class="text-1 text-Navy-950 text-balance">
-            The Bright Future of Web 3.0?
-          </h1>
+          <h1 class="text-1 text-Navy-950">The Bright Future of Web 3.0?</h1>
 
           <div class="space-y-6 xl:space-y-8 ml-3">
             <p class="text-6 text-Navy-600">
@@ -127,9 +127,11 @@
       <!-- New -->
       <section class="bg-Navy-950 px-6 py-4 space-y-8">
         <!-- New-1 -->
-        <h2 class="text-3 text-Gold-400">New</h2>
+         
+
+        <h2 class="text-3 text-Gold-400 mt-4">New</h2>
         <div class="space-y-2">
-          <h3 class="text-white text-4">Hydrogen VS Electric Cars</h3>
+          <h3 class="newh2">Hydrogen VS Electric Cars</h3>
           <p class="text-6 text-Grey-300">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
@@ -138,7 +140,7 @@
         <hr class="border-1 w-full h-[1px] border-Navy-600" />
         <!-- New-2 -->
         <div class="space-y-2">
-          <h3 class="text-white text-4">The Downsides of AI Artistry</h3>
+          <h3 class="newh2">The Downsides of AI Artistry</h3>
           <p class="text-6 text-Grey-300">
             What are the possible adverse effects of on-demand AI image
             generation?
@@ -148,7 +150,7 @@
         <hr class="border-1 w-full h-[1px] border-Navy-600" />
         <!-- New-3 -->
         <div class="space-y-2">
-          <h3 class="text-white text-4">Is VC Funding Drying Up?</h3>
+          <h3 class="newh2">Is VC Funding Drying Up?</h3>
           <p class="text-6 text-Grey-300">
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
@@ -157,8 +159,9 @@
       </section>
       <!-- poupular -->
       <section
-        class="grid grid-cols-1 space-y-8 xl:grid-cols-subgrid xl:col-span-3"
+        class="grid grid-cols-1 space-y-8 xl:grid-cols-subgrid xl:col-span-3 xl:mt-[-36px]"
       >
+      <h1 class="sr-only">Trending</h1>
         <!-- card-1 -->
         <div class="grid grid-cols-[100px_1fr] gap-x-6">
           <div>
