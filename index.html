@@ -20,6 +20,7 @@
       class="mt-7 min-[64rem]:mt-[5.5625rem] mb-8 mx-4 md:mx-[5rem] xl:mx-[10.3125rem] xl:space-y-16"
     >
       <!-- desktop nav -->
+
       <nav class="hidden min-[1024px]:flex justify-between items-center">
         <img
           src="./src/assets/images/logo.svg"
@@ -72,12 +73,18 @@
           alt="close svg"
         />
 
-        <ul class="mx-6 space-y-6 ">
+        <ul class="mx-6 space-y-6">
           <li><a class="menu text-sidebar text-Navy-950" href="#">Home</a></li>
           <li><a class="menu text-sidebar text-Navy-950" href="#">New</a></li>
-          <li><a class="menu text-sidebar text-Navy-950" href="#">Popular</a></li>
-          <li><a class="menu text-sidebar text-Navy-950" href="#">Trending</a></li>
-          <li><a class="menu text-sidebar text-Navy-950" href="#">Categories</a></li>
+          <li>
+            <a class="menu text-sidebar text-Navy-950" href="#">Popular</a>
+          </li>
+          <li>
+            <a class="menu text-sidebar text-Navy-950" href="#">Trending</a>
+          </li>
+          <li>
+            <a class="menu text-sidebar text-Navy-950" href="#">Categories</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -127,41 +134,40 @@
       <!-- New -->
       <section class="bg-Navy-950 px-6 py-4 space-y-8">
         <!-- New-1 -->
-         
 
         <h2 class="text-3 text-Gold-400 mt-4">New</h2>
-        <div class="space-y-2">
+        <article class="space-y-2">
           <h3 class="newh2">Hydrogen VS Electric Cars</h3>
           <p class="text-6 text-Grey-300">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
-        </div>
+        </article>
 
         <hr class="border-1 w-full h-[1px] border-Navy-600" />
         <!-- New-2 -->
-        <div class="space-y-2">
+        <article class="space-y-2">
           <h3 class="newh2">The Downsides of AI Artistry</h3>
           <p class="text-6 text-Grey-300">
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
-        </div>
+        </article>
 
         <hr class="border-1 w-full h-[1px] border-Navy-600" />
         <!-- New-3 -->
-        <div class="space-y-2">
+        <article class="space-y-2">
           <h3 class="newh2">Is VC Funding Drying Up?</h3>
           <p class="text-6 text-Grey-300">
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
           </p>
-        </div>
+        </article>
       </section>
       <!-- poupular -->
       <section
         class="grid grid-cols-1 space-y-8 xl:grid-cols-subgrid xl:col-span-3 xl:mt-[-36px]"
       >
-      <h1 class="sr-only">Trending</h1>
+        <h2 class="sr-only">Trending</h2>
         <!-- card-1 -->
         <div class="grid grid-cols-[100px_1fr] gap-x-6">
           <div>
